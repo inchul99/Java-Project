@@ -29,12 +29,12 @@ public class BodyinfoPanel extends JPanel implements ActionListener {
         mainPanel = new JPanel(mainCardLayout);
         
         //패널 생성
-        //homePanel = new HomePanel();
+        homePanel = new HomePanel();
         //calendarPanel = new CalendarPanel();
        //workoutPanel = new WorkoutPanel();
        //profilePanel = new ProfilePanel();
        
-        //mainPanel.add(homePanel, "home");
+        mainPanel.add(homePanel, "home");
         //mainPanel.add(calendarPanel, "calendar");
         //mainPanel.add(workoutPanel, "workout");
        // mainPanel.add(profilePanel, "profile");
