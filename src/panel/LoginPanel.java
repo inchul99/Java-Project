@@ -98,6 +98,7 @@ public class LoginPanel extends JPanel implements ActionListener {
 				if (loginSuccess) {
 					CustomDialog.showDialog(mainFrame, "로그인 성공!", "로그인 완료");
 					System.out.println("로그인 성공: " + userId);
+					mainFrame.showPanel("bodyinfo");
 				} else {
 					CustomDialog.showDialog(mainFrame, "아이디 혹은 비밀번호가 틀렸습니다.", "로그인 실패");
 				}
