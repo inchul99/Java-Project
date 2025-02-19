@@ -23,9 +23,11 @@ public class MainFrame extends JFrame {
         mainPanel.setBackground(Color.WHITE);
 
         // 패널 추가
+        BodyinfoPanel bodyinfoPanel = new BodyinfoPanel(this);
         LoginPanel loginPanel = new LoginPanel(this);
         JoinPanel joinPanel = new JoinPanel(this);
-
+        
+        mainPanel.add(bodyinfoPanel,"bodyinfo");
         mainPanel.add(loginPanel, "login");
         mainPanel.add(joinPanel, "join");
 
